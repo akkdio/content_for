@@ -1,6 +1,7 @@
 ContentFor::Application.routes.draw do
   resources :tasks
 
+   root to: "tasks#index", as: 'tasks'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
