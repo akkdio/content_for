@@ -11,6 +11,8 @@
 <p>this is where we should see the "Home" link appear that is defined in _header.html.erb:</p> 
 
 <section class="header">
+<!-- Notice lack of = sign in render tag stops the content of the partial rendering -->
+<% render 'layouts/header' %>
 <%= yield :navigation %>
 
 </section>
@@ -19,7 +21,7 @@
 <%= yield %>
 
 </section>
-
+<!-- This can now be removed -->
 <p>If we add the render layouts/header we get this:</p>
 
 <%= render 'layouts/header' %>
